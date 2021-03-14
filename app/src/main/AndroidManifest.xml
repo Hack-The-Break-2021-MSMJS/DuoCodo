@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samduocodo">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.type.watch" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SamDuoCodo">
+        <activity android:name=".CActivity.CPointers.CPointersQuizResultActivity"></activity>
+        <activity android:name=".CActivity.CPointers.WhatIsAPointerQuizActivity" />
+        <activity
+            android:name=".CActivity.CBasics.CDataTypesQuizResultActivity"
+            android:label="C: Data Types Quiz Result" />
+        <activity
+            android:name=".CActivity.CBasics.CDataTypesQuizActivity"
+            android:label="C: Data Types Quiz" />
+        <activity
+            android:name=".CActivity.CBasics.CDataTypesActivity"
+            android:label="C: Data Types" />
+        <activity
+            android:name=".CActivity.CBasics.CIntroQuizActivity"
+            android:label="C: Intro Quiz" />
+        <activity
+            android:name=".CActivity.CBasics.CCommentsQuizActivity"
+            android:label="C: Comments Quiz" />
+        <activity
+            android:name=".CActivity.CBasics.CCommentsActivity"
+            android:label="C: Comments" />
+        <activity
+            android:name=".CActivity.CBasics.CIntroActivity"
+            android:label="C: What is it?" />
+        <activity
+            android:name=".CActivity.CBasics.CBasicsActivity"
+            android:label="C: Basic Concepts" />
+        <activity
+            android:name=".PythonActivity"
+            android:label="Python" />
+        <activity
+            android:name=".JavaActivity"
+            android:label="Java" />
+        <activity
+            android:name=".CActivity.CActivity"
+            android:label="C" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="DuoCodo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

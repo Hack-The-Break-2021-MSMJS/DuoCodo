@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="455dp"
+            android:layout_height="67dp"
+            android:background="#FDB78D"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Pointers"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/button8"
+            android:layout_width="400dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="8dp"
+            android:background="#C2D7C8"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="int *integerPointer, age;\nage = 5;\nintegerPointer = &amp;age;\nprintf(&quot;%d&quot;, *integerPointer); // Output: 5"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/button6"
+            android:layout_width="400dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="8dp"
+            android:background="#C2D7C8"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="int *pointer1;\nint * pointer2;"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+        <TextView
+            android:id="@+id/button_C"
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="#C2D7C8"
+            android:gravity="center"
+            android:text="What is a pointer?"
+            android:textAllCaps="false"
+
+            android:textColor="#0C3EEE"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/button2"
+            android:layout_width="400dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="50dp"
+            android:background="#C2D7C8"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Pointers are important in C programming because it allows you to work with memory locations.\n\nThey are fundamental to arrays and strings as you will see in future lessons."
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_C" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="363dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="37dp"
+            android:padding="10dp"
+            android:text="Here is how pointers are declared:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="357dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:text="Notice that spacing does not matter."
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.272"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="352dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="For example:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.257"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+        <TextView
+            android:id="@+id/button7"
+            android:layout_width="400dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="24dp"
+            android:background="#C2D7C8"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="To get the value of the thing pointed by the pointers, we use the * operator."
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/button9"
+            android:layout_width="400dp"
+            android:layout_height="92dp"
+
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Here, the address of age is assigned to the integerPointer. To get the value stored in that address, we used *integerPointer."
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+        <Button
+            android:id="@+id/button_quiz1"
+            android:layout_width="211dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:background="#FF7783"
+            android:text="Pointer quiz"
+            android:textAllCaps="false"
+            android:textColor="#0C3EEE"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
